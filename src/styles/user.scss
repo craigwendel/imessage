@@ -26,6 +26,9 @@
 
 /* small devices  */
 @media (max-width: 576px) {
+    .user {
+        flex-direction: column;
+    }
     .user-details-status {
         display: none;
     }

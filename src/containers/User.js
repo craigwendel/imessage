@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/user.scss'
 
-const User = ( {user} ) => {
+const User = ({user}) => {
     const { name, profile_pic, status } = user
     return (
         <div className="user">
