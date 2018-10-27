@@ -3,10 +3,10 @@ import '../styles/sidebar.scss'
 
 const Sidebar = () => {
     return (
-        <div>
+        <div className="sidebar">
             <h2>This is the Sidebar</h2>
         </div>
-    );
-};
+    )
+}
 
 export default Sidebar

@@ -3,10 +3,10 @@ import '../styles/main.scss'
 
 const Main = () => {
     return (
-        <div>
+        <div className="main">
             <h2>This is the main screen</h2>
         </div>
-    );
-};
+    )
+}
 
 export default Main
