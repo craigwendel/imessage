@@ -1,0 +1,32 @@
+.user {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    &:hover {
+        background: rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+    }
+}
+.user-image {
+    width: 60px;
+    border-radius: 50%;
+}
+.user-details {
+    display: block;
+    padding: 0 0 0 1rem;
+    .user-details-name {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .user-details-status {
+        font-size: 0.8rem;
+    }
+}
+
+/* small devices  */
+@media (max-width: 576px) {
+    .user-details-status {
+        display: none;
+    }
+  }

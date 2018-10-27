@@ -1,17 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
 import '../styles/App.scss'
 import Sidebar from '../components/Sidebar'
 import Main from '../components/Main'
+import { connect } from 'react-redux'
+import _ from 'lodash'
 
-class App extends Component {
-    render() {
-        return (
-            <div className="App">
-                <Sidebar />
-                <Main />
-            </div>
-        );
-    }
+const App = ( {contacts} ) => {
+    return (
+        <div className="App">
+            <Sidebar contacts={_.values(contacts)} />
+            <Main />
+        </div>
+    );
 }
 
-export default App
+const mapStateToProps = (state) => ({
+    contacts: state
+})
+
+export default connect(mapStateToProps, null)(App)
