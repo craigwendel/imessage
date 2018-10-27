@@ -1,0 +1,17 @@
+/* autoprefixer grid: on */
+
+.App {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* small devices  */
+@media (max-width: 576px) {
+  .App {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
