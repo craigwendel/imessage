@@ -20,5 +20,4 @@ const handleUserClick = ({user_id}) => {
     store.dispatch(setActiveUserId(user_id))
 }
 
-
 export default User
